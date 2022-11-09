@@ -1,0 +1,33 @@
+html {
+   height: 100%;
+   padding: 20px;
+   background-color: #4864df;
+   background-image: radial-gradient(#2998cc, #154069);
+   font-family: Tahoma, Geneva, sans-serif;
+   color: #e7dfeb;
+}
+
+body {
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+h1, h2, p {
+   text-align: center;
+}
+
+form {
+   display: inline;
+}
+
+form > * {
+   border: 2px solid purple;
+   padding: 6px 8px;
+   background-color: white;
+   border-radius: 2px;
+}
+
+div {
+   max-width: 400px;
+   margin: 0 auto;
+}

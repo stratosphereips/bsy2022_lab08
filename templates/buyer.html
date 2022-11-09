@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- <link rel="stylesheet" href="../static/site.css"> -->
+<title>Mythical Pets for 100 CZK</title>
+
+    <h1>{{ mesg }}</h1>
+    <body>
+        <p>Choose your favorite pet:</p>
+        <form action='buy' method='post'>
+          <input type="radio" id="dragon" name="pet" value="Dragon">
+          <label for="dragon">Dragon</label><br>
+          <input type="radio" id="unicorn" name="pet" value="Unicorn">
+          <label for="unicorn">Unicorn</label><br>
+          <input type="radio" id="phoenix" name="pet" value="Phoenix">
+          <label for="phoenix">Phoenix</label><br>
+          <label for="amount">Amount</label><br>
+          <input type="text" id="amount" name="amount" value="2"><br>
+          <button type="submit" value="Buy">Buy</button>
+        </form>
+
+    <!-- {% for mesg in get_flashed_messages() %} -->
+      
+    <!-- {% endfor %} -->
+    </body>
