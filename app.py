@@ -38,8 +38,8 @@ def index():
 def post():
 
    # Add message to the list of posts and go back to the main page
-   person = Markup.escape(request.form["person"])
-   msg = Markup.escape(request.form["msg"])
+   person = request.form["person"]
+   msg = request.form["msg"]
 
 
    posts.append(f"{person} says {msg}")
